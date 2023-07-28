@@ -1,0 +1,116 @@
+.container {
+    height: calc(100% - 180px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.Container {
+    position: relative;
+    height: 200px;
+    min-width: 200px;
+    margin: 8px;
+    position: relative;
+}
+
+/* //! ImageComponent css */
+
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+.imageContainer {
+    position: relative;
+    height: 200px;
+    min-width: 200px;
+    padding: 3.5px;
+}
+
+.imageContainer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    /* transform: translate(-25%, -25%); */
+    /* background: linear-gradient(90deg, #046A38 38%, white 53%, #FF671F 67%); */
+    /* animation: 15s rotateBackground infinite linear; */
+    z-index: -1;
+}
+
+@keyframes rotateBackground {
+    from {
+        transform: translate(-25%, -25%);
+    }
+
+    to {
+        transform: translate(-25%, -25%) rotate(360deg);
+    }
+}
+
+.inner {
+    height: 193px;
+    min-width: 193px;
+    background-color: #d2d8e5;
+    clip-path: circle(50% at 50% 50%); /* Create a circular shape */
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inner .image {
+    max-height: 193px;
+    max-width: 193px;
+    border-radius: 100px;
+    background-image: contain;
+}
+
+.imageName {
+    position: absolute;
+    height: 50px;
+    width: 195px;
+    bottom: -50px;
+    background-color: #afd6e5;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Caprasimo', cursive;
+    color: white;
+    text-overflow: ellipsis;
+    padding-top: 5px;
+    text-align: center;
+    opacity: 0.85;
+    transition: all 0.2s ease-out;
+}
+
+.Container:hover .imageName {
+    bottom: 0;
+}
+
+.Container .edit {
+    display: none;
+    min-width: 100% !important;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 5px;
+    left: 0px;
+    top: -10px;
+}
+
+.Container:hover .edit {
+    display: flex;
+}
+
+.edit img {
+    height: 50px;
+    width: 50px;
+}

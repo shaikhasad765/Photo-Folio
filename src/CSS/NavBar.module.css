@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
+
+
+
+.navBar {
+    background-image: linear-gradient(to right, #ddd8e4, #afd6e6);
+    height: 65px;
+    width: 100%;
+    padding: 8px 10px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo>img {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    margin: 0;
+}
+
+.logo span {
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 20px;
+    background-image: linear-gradient(to right, #9e50fc, #63d2fe);
+    background-clip: text;
+    color: transparent;
+    top: -15px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.albumNameContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.albumName{
+    font-size: 30px;
+    line-height: 0;
+    color: #63d2fe;
+    position: relative;
+    top: -11px;
+    right: 20px;
+    font-family: 'Caprasimo', cursive;
+}
+
+.home {
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    margin-top: 5px;
+    animation: 1.5s linear ani infinite;
+    cursor: pointer;
+}
+
+@keyframes ani {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

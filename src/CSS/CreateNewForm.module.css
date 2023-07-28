@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+.newAlbumForm {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.newAlbumForm form {
+    background-image: linear-gradient(to right, #ddd0ec, #b0d5e4);
+    width: 70%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 0;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+
+.newAlbumForm form input {
+    flex: 2;
+    height: 50px;
+    background-color: #c9f2ff;
+    font-size: 20px;
+    font-family: 'Caprasimo', cursive;
+    color: #9248fb;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.albumName {
+    max-width: 350px !important;
+}
+
+.albumUrl {
+    max-width: 550px !important;
+}
+
+.newAlbumForm form input::-webkit-input-placeholder {
+    color: #9248fb;
+    padding-left: 10px;
+}
+
+.newAlbumForm form button {
+    height: 50px;
+    width: 120px;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    font-family: 'Caprasimo', cursive;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #9e50fc, #63d2fe);
+    border: none;
+}
+
+.newAlbumForm form button:hover {
+    transform: scale(1.1);
+    transition: ease-in-out;
+}
